@@ -1,6 +1,12 @@
 <!doctype html>
 <html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>自動回測 | 波動率溫度計 | Yung's Journey to FIRE</title>
+<meta name="description" content="以網站自動收集的盤中時段紀錄，在瀏覽器內回測波動率溫度計輪動策略。歷史回測不代表未來績效，不構成投資建議。">
+<meta property="og:type" content="website"><meta property="og:site_name" content="Yung's Journey to FIRE"><meta property="og:locale" content="zh_TW">
+<meta property="og:title" content="輪動策略自動回測｜波動率溫度計"><meta property="og:description" content="以網站自動收集的盤中時段紀錄，在瀏覽器內回測波動率溫度計輪動策略。歷史回測不代表未來績效，不構成投資建議。"><meta property="og:url" content="https://leveragevolatilitylife.github.io/Volatility-Barometer/backtest.html">
+<meta property="og:image" content="https://leveragevolatilitylife.github.io/og-image.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="輪動策略自動回測｜波動率溫度計"><meta name="twitter:description" content="以網站自動收集的盤中時段紀錄，在瀏覽器內回測波動率溫度計輪動策略。歷史回測不代表未來績效，不構成投資建議。"><meta name="twitter:image" content="https://leveragevolatilitylife.github.io/og-image.png">
+<link rel="canonical" href="https://leveragevolatilitylife.github.io/Volatility-Barometer/backtest.html">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Noto+Sans+TC:wght@400;500;700;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/site.css?v=202611100823">
@@ -18,6 +24,7 @@ td{padding:7px 8px;border-bottom:1px solid var(--border-soft);text-align:right}t
 .note{font-size:12.5px;color:var(--text-secondary);margin-top:10px;line-height:1.7}.warn{font-family:var(--mono);font-size:11.5px;color:var(--amber);background:var(--amber-dim);border-radius:4px;padding:8px 12px;margin-top:12px}
 .desc{color:var(--text-secondary);font-size:12.5px}.pill{font-family:var(--mono);font-size:10.5px;color:var(--accent);border:1px solid rgba(var(--accent-rgb),.5);border-radius:3px;padding:1px 7px}
 @media(max-width:900px){.grid3{grid-template-columns:1fr}}
+.notice{margin:14px 0 0;padding:9px 12px;border:1px solid var(--amber);border-radius:4px;background:var(--amber-dim);color:var(--amber);font-size:12.5px;line-height:1.6}.notice b{font-weight:600}
 </style></head><body><div class="wrap">
 <header class="site"><a class="brand" href="https://leveragevolatilitylife.github.io/"><img src="assets/avatar.jpg" alt="" onerror="this.style.display='none'"><span>Yung's Journey to FIRE</span></a>
 <div class="hr"><span class="meta-date">BACKTEST ON LOGGED DATA</span><a class="handle" href="https://www.instagram.com/leverage_volatility_life/">@leverage_volatility_life</a></div></header>
@@ -25,6 +32,7 @@ td{padding:7px 8px;border-bottom:1px solid var(--border-soft);text-align:right}t
 <nav class="tabs"><a href="index.html">即時溫度計</a><a class="on" href="backtest.html">自動回測</a></nav>
 <div class="eyebrow" style="margin-top:20px">INTRADAY ROTATION BACKTEST</div>
 <h1>輪動策略自動回測</h1><div class="sub">Backtest on collected snapshots</div>
+<div class="notice"><b>歷史回測不代表未來績效，不構成投資建議。</b>資料僅為建站後累積的短期樣本，且資料有約 15 分鐘延遲，結果容易受樣本偏誤與交易成本設定影響。</div>
 <p class="note">使用網站自動收集的時段紀錄（開盤、每半小時、收盤，含 11 檔標的價格），在瀏覽器內即時回測。資料從建站後的第一個交易日開始累積，樣本期間很短時結果只具參考性。</p>
 <div style="margin-top:14px" id="updmount"></div>
 

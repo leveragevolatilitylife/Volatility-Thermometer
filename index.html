@@ -1,6 +1,12 @@
 <!doctype html>
 <html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>美股即時波動率溫度計 | Yung's Journey to FIRE</title>
+<meta name="description" content="依 13 項波動率指標計算的市場風險溫度計，資料約延遲 15 分鐘；僅為資料整理與策略追蹤，不構成投資建議。">
+<meta property="og:type" content="website"><meta property="og:site_name" content="Yung's Journey to FIRE"><meta property="og:locale" content="zh_TW">
+<meta property="og:title" content="美股即時波動率溫度計"><meta property="og:description" content="依 13 項波動率指標計算的市場風險溫度計，資料約延遲 15 分鐘；僅為資料整理與策略追蹤，不構成投資建議。"><meta property="og:url" content="https://leveragevolatilitylife.github.io/Volatility-Barometer/index.html">
+<meta property="og:image" content="https://leveragevolatilitylife.github.io/og-image.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="美股即時波動率溫度計"><meta name="twitter:description" content="依 13 項波動率指標計算的市場風險溫度計，資料約延遲 15 分鐘；僅為資料整理與策略追蹤，不構成投資建議。"><meta name="twitter:image" content="https://leveragevolatilitylife.github.io/og-image.png">
+<link rel="canonical" href="https://leveragevolatilitylife.github.io/Volatility-Barometer/index.html">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Noto+Sans+TC:wght@400;500;700;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/site.css?v=202611100823">
@@ -31,14 +37,16 @@ select{background:var(--bg);color:var(--text-primary);border:1px solid var(--bor
 td.rk{color:#fff;text-shadow:0 0 2px rgba(0,0,0,.85);text-align:center;font-weight:600}
 .scale{display:flex;align-items:center;gap:8px;font-family:var(--mono);font-size:10.5px;color:var(--text-tertiary);margin:6px 0}.scale span{display:flex}.scale b{width:22px;height:10px;display:block}
 .slotrow-late td{opacity:.55}
+.notice{margin:14px 0 0;padding:9px 12px;border:1px solid var(--amber);border-radius:4px;background:var(--amber-dim);color:var(--amber);font-size:12.5px;line-height:1.6}.notice b{font-weight:600}
 </style></head><body>
 <div class="wrap">
 <header class="site"><a class="brand" href="https://leveragevolatilitylife.github.io/"><img src="assets/avatar.jpg" alt="" onerror="this.style.display='none'"><span>Yung's Journey to FIRE</span></a>
 <div class="hr"><span class="meta-date">CBOE · INTRADAY SNAPSHOT</span><a class="handle" href="https://www.instagram.com/leverage_volatility_life/">@leverage_volatility_life</a></div></header>
 <a class="crumb" href="https://leveragevolatilitylife.github.io/">← 回到入口</a>
 <nav class="tabs"><a class="on" href="index.html">美股即時溫度計</a><a href="backtest.html">自動回測</a></nav>
-<div class="eyebrow">VOLATILITY BAROMETER · LIVE</div>
-<h1>美股即時波動率溫度計</h1><div class="sub">Real-time Volatility Barometer</div>
+<div class="eyebrow">VOLATILITY BAROMETER · 約 15 分鐘延遲</div>
+<h1>美股即時波動率溫度計</h1><div class="sub">Near-real-time Volatility Barometer（delayed ~15 min）</div>
+<div class="notice"><b>資料約延遲 15 分鐘，並非逐筆即時報價。</b>溫度計權重由公開輸出擬合而成，不是任何機構的官方數值；下方部位只是作者自己策略的機械式換算，<b>不是對你的買賣建議，不構成投資建議</b>，請自行判斷並承擔風險。資料來自非官方來源，可能中斷或有誤。</div>
 
 <div style="margin-top:18px" id="updmount"></div>
 <section class="card gauge-card" aria-live="polite">
@@ -51,7 +59,7 @@ td.rk{color:#fff;text-shadow:0 0 2px rgba(0,0,0,.85);text-align:center;font-weig
  </div>
 </section>
 
-<h3 class="sec">// 三大輪動策略 · 以目前溫度計換算的部位</h3>
+<h3 class="sec">// 三大輪動策略 · 以目前溫度計換算的部位（作者策略的機械式輸出，非買賣建議）</h3>
 <div class="grid3" id="strats"></div>
 
 <h3 class="sec">// 時段紀錄 · 開盤、每半小時、收盤（含 11 檔輪動標的價格）</h3>
