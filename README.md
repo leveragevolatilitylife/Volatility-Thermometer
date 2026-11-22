@@ -1,4 +1,4 @@
-# 即時波動率溫度計 (Volatility Barometer Live)
+# 即時波動率溫度計 (Volatility Thermometer Live)
 
 靜態網頁 + GitHub Actions：每個美股交易日開盤後約 1 小時（10:30 ET）自動記錄溫度計與三策略部位到 `data/snapshots.csv`，
 盤中另可手動／排程更新 `data/live.json`。
