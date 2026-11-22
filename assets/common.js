@@ -9,7 +9,7 @@ B.STEPS=(function(){var R=[255,36,0],M=[255,225,53],G=[0,255,127],o=[];for(var i
 B.riskRgb=function(r){if(r==null||isNaN(r))return null;return B.STEPS[Math.min(9,Math.floor(Math.max(0,Math.min(1,1-r))*10))]};
 /* ---- 立即更新 ---- */
 var host=location.hostname,parts=location.pathname.split('/').filter(Boolean);
-B.repo=(host.endsWith('.github.io')?host.split('.')[0]:'leveragevolatilitylife')+'/'+(host.endsWith('.github.io')&&parts[0]?parts[0]:'Volatility-Barometer');
+B.repo=(host.endsWith('.github.io')?host.split('.')[0]:'leveragevolatilitylife')+'/'+(host.endsWith('.github.io')&&parts[0]?parts[0]:'Volatility-Thermometer');
 var KEY='baro_gh_token';
 function tok(){try{return localStorage.getItem(KEY)||''}catch(e){return ''}}
 function setTok(v){try{v?localStorage.setItem(KEY,v):localStorage.removeItem(KEY)}catch(e){}}
