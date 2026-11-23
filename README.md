@@ -45,3 +45,8 @@
 ## 測試
 `python tests/test_core.py`（需原始 df2.pkl）、`python tests/test_fetch_mock.py`（離線管線）。
 - `data/raw_log.csv`：同時段另存原始值（M1–M7、VIX1Y、VVIX、SKEW、SPXTR、SPX），供每週更新模型用（模型檔已移至私人 repo）（SDEX/TDEX 無免費來源，未記錄）。
+
+## 10:00 ET 持倉推播
+`scripts/notify.py` 在 10:00 ET 時段記錄後，透過 [ntfy.sh](https://ntfy.sh) 推播三個策略持倉。
+在 repo 的 Settings → Secrets and variables → Actions 新增 `NTFY_TOPIC`（自訂一組不易猜的主題名稱），
+手機／電腦的 ntfy App 或網頁訂閱同一個主題即可。已推播日期記在 `data/notified.txt`。

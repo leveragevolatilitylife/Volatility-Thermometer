@@ -35,3 +35,16 @@ jobs:
             sleep $((RANDOM % 5 + 2))
           done
           exit 1
+      - name: 10:00 ET 持倉推播（ntfy）
+        if: always()
+        continue-on-error: true
+        env: { NTFY_TOPIC: "${{ secrets.NTFY_TOPIC }}" }
+        run: |
+          [ -n "$NTFY_TOPIC" ] || { echo "NTFY_TOPIC not set; skip"; exit 0; }
+          git fetch -q origin main && git reset -q --hard origin/main
+          python scripts/notify.py || exit 0
+          git add data/notified.txt
+          git diff --cached --quiet && exit 0
+          git config user.name "baro-bot"; git config user.email "baro-bot@users.noreply.github.com"
+          git commit -q -m "notify: $(date -u +%FT%TZ)"
+          for i in 1 2 3; do git push -q && exit 0; git pull -q --rebase; sleep 3; done
