@@ -1,117 +1,137 @@
 {
- "asof_et": "2026-11-27T10:55:18-05:00",
+ "asof_et": "2026-11-27T11:05:27-05:00",
  "trade_date": "2026-11-27",
  "slot": "LIVE",
- "bar_time_et": "10:55",
- "barometer": 0.8866,
- "coverage": 1.0,
- "price_signal": 0.7374,
- "tail_score": 0.8568,
+ "bar_time_et": null,
+ "barometer": 0.8429,
+ "coverage": 0.964,
+ "price_signal": 0.8364,
+ "tail_score": 0.8416,
  "strategies": {
-  "defensive": "Cash",
+  "defensive": "XLU",
   "tactical": "GLD",
   "tail": "IYR/KO"
  },
  "prices": {
-  "SVIX": 17.28,
-  "SVXY": 51.21,
-  "GLD": 331.84,
-  "VXZ": 52.37,
-  "QLD": 70.49,
-  "QQQ": 644.955,
-  "XLU": 43.6199,
-  "SPY": 725.19,
-  "IYR": 101.88,
-  "KO": 97.424,
-  "CAOS": 91.845
+  "SVIX": null,
+  "SVXY": null,
+  "GLD": null,
+  "VXZ": null,
+  "QLD": null,
+  "QQQ": null,
+  "XLU": null,
+  "SPY": 725.3001,
+  "IYR": null,
+  "KO": null,
+  "CAOS": null
  },
  "inputs": {
-  "VIX": 25.68000030517578,
-  "VIX9D": 26.40999984741211,
-  "VIX3M": 25.0,
-  "VIX6M": 25.93000030517578,
-  "VOLI": 21.280099868774414,
-  "HV5": 48.497222281856786,
-  "HV20": 32.15086544735447,
+  "VIX": 22.91,
+  "VIX3M": 23.02,
+  "VIX9D": 23.15,
+  "VIX6M": 23.79,
+  "HV5": 36.23444485635875,
+  "HV20": 19.81252142430053,
   "roll_w": 0.631578947368421,
   "K": 12,
   "futures": [
-   23.81,
-   23.47,
-   23.33,
+   23.75,
+   23.45,
+   23.35,
+   23.15,
    23.1,
-   23.07,
-   22.89,
-   22.82
+   22.95,
+   22.85
   ]
  },
  "raw": {
-  "VIX1Y": 25.420000076293945,
-  "VVIX": 110.83000183105469,
+  "VIX1Y": null,
+  "VVIX": null,
   "SKEW": null,
-  "SPXTR": 16327.830078125,
-  "SPX": 7267.81982421875
+  "SPXTR": null,
+  "SPX": null
  },
  "metrics": {
   "Cash VIX Oscillator": {
-   "value": -1.1599998474121094,
-   "risk": 0.9263711495116453
-  },
-  "Adjust M1:M2 VIX Futures": {
-   "value": -0.011244194573453714,
-   "risk": 0.8955672426746807
-  },
-  "VX30:VIX Roll Yield": {
-   "value": -0.07769717442987645,
-   "risk": 0.9464062108690208
-  },
-  "Traders VRP": {
-   "value": -23.285652278908934,
-   "risk": 0.9914850989231154
-  },
-  "VIX-VOLI": {
-   "value": 4.399900436401367,
-   "risk": 0.9068369646882044
-  },
-  "M1:M2 VIX Futures": {
-   "value": -0.014279714405711852,
+   "value": 0.7499999999999964,
    "risk": 0.8890558477335337
   },
+  "Adjust M1:M2 VIX Futures": {
+   "value": -0.009573639096070452,
+   "risk": 0.8898071625344353
+  },
+  "VX30:VIX Roll Yield": {
+   "value": 0.031840841737692305,
+   "risk": 0.743801652892562
+  },
+  "Traders VRP": {
+   "value": -10.157607790716073,
+   "risk": 0.9784623090408214
+  },
+  "VIX-VOLI": {
+   "value": null,
+   "risk": null
+  },
+  "M1:M2 VIX Futures": {
+   "value": -0.012631578947368438,
+   "risk": 0.8835462058602555
+  },
   "M4:M7 VIX Futures": {
-   "value": -0.0121212121212122,
-   "risk": 0.9146005509641874
+   "value": -0.01295896328293722,
+   "risk": 0.9178562484347609
   },
   "VIX9D:VIX": {
-   "value": 1.0284267731137526,
-   "risk": 0.8239418983220637
+   "value": 1.0104757747708424,
+   "risk": 0.7733533683946907
   },
   "VIX:VIX3M": {
-   "value": 1.0272000122070313,
-   "risk": 0.9566741798146757
+   "value": 0.9952215464813207,
+   "risk": 0.9166040570999249
   },
   "VIX:VIX6M": {
-   "value": 0.9903586580386542,
-   "risk": 0.9268720260455797
+   "value": 0.9630096679277007,
+   "risk": 0.8968194340095167
   },
   "Simple VRP": {
-   "value": -6.470865142178688,
-   "risk": 0.03130478337089907
+   "value": 3.097478575699469,
+   "risk": 0.3839218632607062
   },
   "VX30 M1:M2": {
-   "value": 23.68473684210526,
-   "risk": 0.8276984723265715
+   "value": 23.63947368421053,
+   "risk": 0.8266967192587027
   },
   "VIX (1 month)": {
-   "value": 25.68000030517578,
-   "risk": 0.8880540946656649
+   "value": 22.91,
+   "risk": 0.8338342098672678
   }
  },
  "sources": {
-  "VIX": "yahoo",
-  "VIX9D": "yahoo",
-  "VIX3M": "yahoo",
-  "VIX6M": "yahoo",
-  "VOLI": "yahoo"
+  "VIX": "volchart",
+  "VIX3M": "volchart",
+  "VIX9D": "volchart",
+  "VIX6M": "volchart"
  },
- "errors": {}
+ "errors": {
+  "^VIX": "https://query1.finance.yahoo.com/v8/finance/chart/%5EVIX?interval=5m&range=5d: H",
+  "^VIX9D": "https://query1.finance.yahoo.com/v8/finance/chart/%5EVIX9D?interval=5m&range=5d:",
+  "^VIX3M": "https://query1.finance.yahoo.com/v8/finance/chart/%5EVIX3M?interval=5m&range=5d:",
+  "^VIX6M": "https://query1.finance.yahoo.com/v8/finance/chart/%5EVIX6M?interval=5m&range=5d:",
+  "^VOLI": "https://query1.finance.yahoo.com/v8/finance/chart/%5EVOLI?interval=5m&range=5d: ",
+  "SVIX": "https://query1.finance.yahoo.com/v8/finance/chart/SVIX?interval=5m&range=5d: HTT",
+  "SVXY": "https://query1.finance.yahoo.com/v8/finance/chart/SVXY?interval=5m&range=5d: HTT",
+  "GLD": "https://query1.finance.yahoo.com/v8/finance/chart/GLD?interval=5m&range=5d: HTTP",
+  "VXZ": "https://query1.finance.yahoo.com/v8/finance/chart/VXZ?interval=5m&range=5d: HTTP",
+  "QLD": "https://query1.finance.yahoo.com/v8/finance/chart/QLD?interval=5m&range=5d: HTTP",
+  "QQQ": "https://query1.finance.yahoo.com/v8/finance/chart/QQQ?interval=5m&range=5d: HTTP",
+  "XLU": "https://query1.finance.yahoo.com/v8/finance/chart/XLU?interval=5m&range=5d: HTTP",
+  "IYR": "https://query1.finance.yahoo.com/v8/finance/chart/IYR?interval=5m&range=5d: HTTP",
+  "KO": "https://query1.finance.yahoo.com/v8/finance/chart/KO?interval=5m&range=5d: HTTP ",
+  "CAOS": "https://query1.finance.yahoo.com/v8/finance/chart/CAOS?interval=5m&range=5d: HTT",
+  "^VIX1Y": "https://query1.finance.yahoo.com/v8/finance/chart/%5EVIX1Y?interval=5m&range=5d:",
+  "^VVIX": "https://query1.finance.yahoo.com/v8/finance/chart/%5EVVIX?interval=5m&range=5d: ",
+  "^SKEW": "https://query1.finance.yahoo.com/v8/finance/chart/%5ESKEW?interval=5m&range=5d: ",
+  "^SP500TR": "https://query1.finance.yahoo.com/v8/finance/chart/%5ESP500TR?interval=5m&range=5",
+  "^GSPC": "https://query1.finance.yahoo.com/v8/finance/chart/%5EGSPC?interval=5m&range=5d: ",
+  "^GSPC_1d": "https://query1.finance.yahoo.com/v8/finance/chart/%5EGSPC?interval=1d&range=3mo:"
+ }
 }
